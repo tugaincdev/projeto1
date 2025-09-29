@@ -193,7 +193,7 @@ footer::before {
 
 
 .contact-section {
-  background: url("../images/contact-me-bg.png") no-repeat center center/cover;
+  background: url("../images/contact-me-bg.png") no-repeat center center/cover !important;
   padding: 80px 20px;
   text-align: center;
   color: white;
