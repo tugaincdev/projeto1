@@ -191,7 +191,6 @@ footer::before {
   }
 }
 
-
 .contact-section {
   background: url("../images/contact-me-bg.png") no-repeat center center/cover !important;
   padding: 80px 20px;
@@ -223,7 +222,7 @@ footer::before {
 .contact-form button {
   padding: 10px 20px;
   border: none;
-  background: #4caf50;
+  background: #444;
   color: white;
   font-weight: bold;
   border-radius: 0 8px 8px 0;
@@ -232,5 +231,5 @@ footer::before {
 }
 
 .contact-form button:active {
-  background: #2e7d32; /* darker green when clicked */
+  background: #888; /* darker green when clicked */
 }
