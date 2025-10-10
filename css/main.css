@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
       .carousel-caption h5 {
         color: white !important;
       }
-      #about-me h1, #about-me h2, #about-me h3, #about-me h4, #about-me h5, #about-me h6 {
+      #about-me h1, #about-me h2, #about-me h3, #about-me h4, #about-me h5, #projects h5, #about-me h6 {
         color: black !important;
       }
       #about-me .text-muted {
