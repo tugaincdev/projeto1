@@ -1,3 +1,22 @@
+h1, h2, h3, h4, h5, h6 {
+        color: white !important;
+      }
+      .text-muted {
+        color: white !important;
+      }
+      .card-title {
+        color: white !important;
+      }
+      .carousel-caption h5 {
+        color: white !important;
+      }
+      #about-me h1, #about-me h2, #about-me h3, #about-me h4, #about-me h5, #about-me h6 {
+        color: black !important;
+      }
+      #about-me .text-muted {
+        color: #6c757d !important;
+      }
+
 body {
   font-family: "Roboto", sans-serif;
   display: flex;
