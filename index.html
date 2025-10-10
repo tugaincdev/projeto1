@@ -25,6 +25,24 @@
     />
   </head>
   <body>
+    <section
+      id="background-section"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
+      "
+    >
+
+      <canvas id="particles"></canvas>
+
+     
+      <div id="hexagonGrid"></div>
+    </section>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">My Portfolio</a>
@@ -415,4 +433,35 @@
       });
     </script>
   </body>
+   <script>
+    function createHexGrid() {
+      const grid = document.getElementById("hexagonGrid");
+      const container = grid.parentNode;
+      const wall = {
+        width: container.offsetWidth,
+        height: container.offsetHeight,
+      };
+      const rowsNum = Math.ceil(wall.height / 80);
+      const colsNum = Math.ceil(wall.width / 100) + 1;
+
+      grid.innerHTML = "";
+      for (let i = 0; i < rowsNum; i++) {
+        const row = document.createElement("div");
+        row.className = "row";
+        grid.appendChild(row);
+      }
+
+      const rows = grid.querySelectorAll(".row");
+      for (let i = 0; i < rows.length; i++) {
+        for (let j = 0; j < colsNum; j++) {
+          const hex = document.createElement("div");
+          hex.className = "hexagon";
+          rows[i].appendChild(hex);
+        }
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", createHexGrid);
+    window.addEventListener("resize", createHexGrid);
+  </script>
 </html>
