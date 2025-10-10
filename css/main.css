@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
       #about-me .text-muted {
         color: #6c757d !important;
       }
-  #my-skills h1, #my-skills h2, #my-skills h3, #my-skills h4, #my-skills h5, #my-skills h6 {
+ #my-skills h2, #my-skills h3, #my-skills h4, #my-skills h5, #my-skills h6 {
         color: black !important;
   }
       }
